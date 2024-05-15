@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #222831;
+    --cor-secundaria:#EEEEEE;
+    --cor-terciaria:#00ADB5;
+    --cor-hover:#393E46;
+}
+
+
+
+
+
+*{
+    margin: 0; /*reseta o css */
+    padding: 0;
+
+}
+
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box; /* faz com que o filho sempre esteja dentro das limitações do pai */
+    background-color:var(--cor-primaria); /*muda a cor do background */
+    color: var(--cor-secundaria);
+}
+
+.cabeçalho {
+    padding: 2% 0% 0% 15%; /* quando temos 4 valores: 1:superior 2:direito 3:inferior 4:esquerdo */
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 80px;
+    
+}
+
+.cabeçalho-menu-link {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 1.5rem; /* valor original 24px */
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none; /* tira a decoração do texto */
+}
+
+.apresentacao{
+    /* margin: 7% 13%; */
+    padding: 4% 15%;
+    display: flex; /* coloca os elementos filhos na msm linha */
+    align-items: center; /* alinha os itens no propio alinhamento deles */
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentacao-conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*espaçamento entre os filhos */
+}
+
+.apresentacao-conteudo-titulo{
+    font-size: 2.25rem;  /* 1 rem equivale a 16px/ valor original:36px */
+    font-family: "Krona One", sans-serif; 
+}
+
+.titulo-destaque{
+    color:var(--cor-terciaria);
+}
+
+.apresentacao-conteudo-paragrafo{
+    font-size: 1.5rem; /* valor original 24px */
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao-links{
+    display: flex; /* por padrão fica em linha */
+    flex-direction: column; /* deixa na coluna */
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao-links-titulo {
+    font-family: "Krona One", sans-serif; 
+    font-weight: 400; /*força da fonte */
+    font-size: 1.5rem; /* tamanho da fonte, valor original 24px */
+}
+    
+
+
+.apresentacao-links-botao{
+    /* background-color: #22d4fd;   comentado com o atalho ctrl + k + c */ 
+    display: flex; /* por padrão fica em linha */
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px; /* define o raio da borda (deixa circular) */
+    font-size: 1.5rem; /* valor original 24px */
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    border: 2px solid var(--cor-terciaria); /*define a borda, se é solida ou trasejada e a cor */
+    
+    
+}
+
+.apresentacao-links-link:hover{
+    background-color: var(--cor-hover);
+}
+
+.nome:hover{
+    color: aqua;
+
+}
+
+.js:hover{
+    color: yellow;
+}   
+.html:hover{
+    color: #ec6261;
+}
+
+.apresentacao-imagem{
+    width: 50%;
+    
+}
+
+.rodape{
+
+    /*não se deve usar margin, pois ficaria da borda pra fora */
+    padding: 33px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center; /* alinha o texto */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem; /* valor original 24px */
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) { /*se for maior que entra no {}... usado para responsividade */
+
+    .cabeçalho{
+        padding: 10%;
+    }
+
+    .cabeçalho-menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse; /*reverse pq passa a imagem para cima */
+        padding: 5%;
+    }
+    
+    .apresentacao-conteudo{
+        width: auto; /* ou 100%, é a msm coisa ja que estariamos mandando o filho ocupar 100% do pai */
+    }
+}   
