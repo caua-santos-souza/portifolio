@@ -163,3 +163,48 @@ body{
         width: auto; /* ou 100%, é a msm coisa ja que estariamos mandando o filho ocupar 100% do pai */
     }
 }   
+
+@media (max-width: 395px) {
+    .cabeçalho {
+        padding: 10% 0.5% 10% 0.1%;
+    }
+
+    .cabeçalho-menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto; /* ou 100%, é a mesma coisa já que estaríamos mandando o filho ocupar 100% do pai */
+    }
+
+    .apresentacao-conteudo-titulo{
+        font-size: 1.5rem;
+        
+    }
+
+    .apresentacao-conteudo-paragrafo{
+        font-size: 1rem;
+    }
+
+    .apresentacao-imagem {
+        width: 50%;
+    }
+
+    .apresentacao-links-titulo{
+        font-size: 1.15rem;
+    }
+
+    .apresentacao-links-botao {
+        width: 65%;
+    }
+
+    .rodape{
+        padding: 10px;
+        font-size: 1.3rem;   
+    }
+}
