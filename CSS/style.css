@@ -164,15 +164,24 @@ body{
 }
 
 @media (max-width: 1440px) { /*se for maior que entra no {}... usado para responsividade */
+    
+    .cabeçalho {
+        padding: 2% 0% 0% 5%; /* quando temos 4 valores: 1:superior 2:direito 3:inferior 4:esquerdo */
+    }
+
+    .apresentacao{
+        
+        padding: 4% 5%;
+    }
     .apresentacao-conteudo{
         width: auto; /* ou 100%, é a msm coisa ja que estariamos mandando o filho ocupar 100% do pai */
     }
 
     .apresentacao-links-botao {
-        width: 60%;
+        width: 35%;
     }
 
-}   
+}     
 
 @media (max-width: 1200px) { /*se for maior que entra no {}... usado para responsividade */
 
