@@ -157,15 +157,41 @@ body{
 }
 
 .apresentacao-conteudo-titulo-resume{
-    font-size: 1.5rem;  /* 1 rem equivale a 16px/ valor original:36px */
+    font-size: 2.25rem;  /* 1 rem equivale a 16px/ valor original:36px */
     font-family: "Krona One", sans-serif; 
     color: var(--cor-secundaria);
 }
 
-.apresentacao-conteudo-paragrafo-resume{
-    font-size: 1rem; /* valor original 24px */
+.apresentacao-conteudo-paragrafo-resume-format {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre as linhas */
+    max-width: 600px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    
+}
+.linha {
+    font-size: 1.5rem; /* valor original 24px */
     font-family: "Montserrat", sans-serif;
-    color: var(--cor-terciaria);
+    color: var(--cor-terciaria); 
+    display: flex;
+    justify-content: space-between;
+}
+.linha span {
+    width: 45%; /* Define uma largura fixa para cada coluna */
+    position: relative; /* Necessário para o pseudo-elemento ::before */
+}
+
+.linha span::before {
+    content: "•"; /* Adiciona o ponto antes de cada palavra */
+    position: absolute;
+    left: -20px; /* Ajuste a posição conforme necessário */
+}
+
+.apresentacao-conteudo-paragrafo-resume{
+    font-size: 1.5rem; /* valor original 24px */
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor-terciaria); 
 }
 
 .rodape{
@@ -276,6 +302,22 @@ body{
 
     .apresentacao-links-botao {
         width: 65%;
+    }
+
+    .apresentacao-conteudo-titulo-resume{
+        font-size: 1.5rem;  /* 1 rem equivale a 16px/ valor original:36px */
+    }
+    
+    .apresentacao-conteudo-paragrafo-resume{
+        font-size: 1rem; 
+    }
+
+    .linha {
+        font-size: 1rem; 
+    }
+    
+    .linha span::before {
+        left: -0.625rem; /* Ajuste a posição conforme necessário */
     }
 
     .rodape{
