@@ -182,12 +182,6 @@ body{
     position: relative; /* Necessário para o pseudo-elemento ::before */
 }
 
-.linha span::before {
-    content: "•"; /* Adiciona o ponto antes de cada palavra */
-    position: absolute;
-    left: -20px; /* Ajuste a posição conforme necessário */
-}
-
 .apresentacao-conteudo-paragrafo-resume{
     font-size: 1.5rem; /* valor original 24px */
     font-family: "Montserrat", sans-serif;
@@ -314,10 +308,6 @@ body{
 
     .linha {
         font-size: 1rem; 
-    }
-    
-    .linha span::before {
-        left: -0.625rem; /* Ajuste a posição conforme necessário */
     }
 
     .rodape{
