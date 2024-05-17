@@ -43,7 +43,7 @@ body{
 
 .cabeçalho-menu-link {
     font-family: "Montserrat", sans-serif; 
-    font-size: 1.5rem; /* valor original 24px */
+    font-size: 2rem; /* valor original 24px */
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none; /* tira a decoração do texto */
@@ -135,8 +135,13 @@ body{
 }
 
 .nome:hover{
-    color: #A91D3A;
+    color: var(--cor-terciaria);
+    
 
+}
+
+.CSS:hover{
+    color: aqua;
 }
 
 .js:hover{
@@ -175,6 +180,9 @@ body{
     font-weight: 400;
 }
 
+
+
+
 @media (max-width: 1440px) { /*se for maior que entra no {}... usado para responsividade */
     
     .cabeçalho {
@@ -203,6 +211,14 @@ body{
 
     .cabeçalho-menu{
         justify-content: center;
+        gap: 120px;
+    }
+
+    .cabeçalho-menu-link {
+        font-size: 1.25rem; /* valor original 24px */
+        font-weight: 600;
+       
+
     }
 
     .apresentacao{
@@ -213,16 +229,23 @@ body{
     .apresentacao-conteudo{
         width: auto; /* ou 100%, é a msm coisa ja que estariamos mandando o filho ocupar 100% do pai */
     }
+
+    .apresentacao-links-botao {
+        width: 30%;
+    }
 }   
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .cabeçalho {
         padding: 10% 0.5% 10% 0.1%;
+        
     }
 
     .cabeçalho-menu {
         justify-content: center;
+        gap: 20px;
+
     }
 
     .apresentacao {
@@ -260,3 +283,4 @@ body{
         font-size: 1.3rem;   
     }
 }
+
